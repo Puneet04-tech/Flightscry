@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flightscry - App Preview</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #1a1a2e;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .phone-frame {
+            width: 375px;
+            height: 812px;
+            background: #0770E3;
+            border-radius: 40px;
+            padding: 20px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .phone-frame::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 30px;
+            background: #1a1a2e;
+            border-radius: 20px;
+        }
+
+        .app-content {
+            margin-top: 50px;
+            padding: 16px;
+            height: calc(100% - 50px);
+            overflow-y: auto;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 16px;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: 500;
+            color: #111236;
+            margin-bottom: 8px;
+        }
+
+        .card-label {
+            font-size: 12px;
+            color: #68697F;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 8px;
+        }
+
+        .card-heading1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #111236;
+            margin-top: 4px;
+        }
+
+        .card-heading2 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #111236;
+            margin-top: 4px;
+        }
+
+        .card-caption {
+            font-size: 12px;
+            color: #68697F;
+            margin-top: 4px;
+        }
+
+        .cards-row {
+            display: flex;
+            gap: 16px;
+        }
+
+        .cards-row .card {
+            flex: 1;
+            text-align: center;
+        }
+
+        .duration-card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .duration-card .body-text {
+            font-size: 14px;
+            color: #111236;
+        }
+
+        .duration-card .heading4 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #111236;
+        }
+
+        .duration-card .label {
+            font-size: 14px;
+            font-weight: 500;
+            color: #0770E3;
+            margin-left: 16px;
+        }
+
+        .status-bar {
+            position: absolute;
+            top: 45px;
+            left: 20px;
+            right: 20px;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .app-title {
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        /* Plane icon decoration */
+        .plane-decoration {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="phone-frame">
+        <div class="status-bar">
+            <span>9:41</span>
+            <span>📶 🔋</span>
+        </div>
+        
+        <div class="app-content">
+            <div class="app-title">Flightscry</div>
+            
+            <!-- Flight Information Card -->
+            <div class="card">
+                <div class="card-title">Flight Information</div>
+                <div class="card-label">Flight Number</div>
+                <div class="card-heading1">SK 1234</div>
+            </div>
+
+            <!-- Departure and Arrival Cards -->
+            <div class="cards-row">
+                <!-- Departure Card -->
+                <div class="card">
+                    <div class="card-title">Departure</div>
+                    <div class="card-heading1">LHR</div>
+                    <div class="card-caption">London Heathrow</div>
+                    <div class="card-label">Time</div>
+                    <div class="card-heading2">08:30</div>
+                </div>
+
+                <!-- Arrival Card -->
+                <div class="card">
+                    <div class="card-title">Arrival</div>
+                    <div class="card-heading1">JFK</div>
+                    <div class="card-caption">New York JFK</div>
+                    <div class="card-label">Time</div>
+                    <div class="card-heading2">11:45</div>
+                </div>
+            </div>
+
+            <!-- Duration Card -->
+            <div class="card duration-card">
+                <span class="body-text">Duration:</span>
+                <span class="heading4">7h 15m</span>
+                <span class="label">Non-stop</span>
+            </div>
+
+            <div class="plane-decoration">✈️</div>
+        </div>
+    </div>
+</body>
+</html>

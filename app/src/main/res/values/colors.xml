@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bpkSkyBlue">#0770E3</color>
+    <color name="bpkSkyBlueTint01">#6D9FEB</color>
+    <color name="bpkSkyBlueTint02">#B4CFf5</color>
+    <color name="bpkSkyBlueTint03">#E4EFFC</color>
+    <color name="bpkMonteverde">#00A698</color>
+    <color name="bpkPrimaryGreen">#00B67A</color>
+</resources>
